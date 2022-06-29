@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+$textColorPrimary: rgb(224, 224, 224);
+
+@mixin textFormat($size, $color) {
+  color: $color;
+  font-family: Verdana, sans-serif;
+  size: $size;
+  margin: 0;
+}
+
+.background {
+  height: 100vh;
+  width: 100vw;
+  background-color: #206f80;
+  position: fixed;
+  margin: 0;
+}
