@@ -1,0 +1,35 @@
+@import "../../../styles.scss";
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+@mixin sideBarButton {
+  @include textFormat(18px, $textColorPrimary);
+  width: 100%;
+  border: 1px solid #3e5360;
+  border-left: none;
+  border-right: none;
+  border-radius: 0%;
+  height: 60px;
+  transition: background-color 0.5s ease;
+}
+
+.unClickedButton {
+  @include sideBarButton();
+  background-color: transparent;
+}
+
+.unClickedButton:hover {
+  background-color: #50809e;
+  cursor: pointer;
+}
+
+.clickedButton {
+  @include sideBarButton();
+  background-color: rgb(17, 115, 151);
+}

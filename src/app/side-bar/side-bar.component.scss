@@ -6,9 +6,10 @@
   position: relative;
   background-color: #033347;
   display: flex;
+  flex-direction: column;
 }
 
 h1 {
-  @include textFormat(50px, $textColorPrimary);
+  @include textFormat(40px, $textColorPrimary);
   margin: 20px auto;
 }

@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { sideBarNavList } from '../sideBar';
 
 @Component({
   selector: 'app-side-bar',

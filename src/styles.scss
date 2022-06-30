@@ -3,7 +3,7 @@ $textColorPrimary: rgb(224, 224, 224);
 @mixin textFormat($size, $color) {
   color: $color;
   font-family: Verdana, sans-serif;
-  size: $size;
+  font-size: $size;
   margin: 0;
 }
 
