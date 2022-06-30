@@ -1,14 +1,16 @@
 <div>
   <ul>
     <li *ngFor="let item of listItem">
-      <button
-        class="unClickedButton"
-        [class.clickedButton]="item === selectedItem"
-        type="button"
-        (click)="onSelect(item)"
-      >
-        <p>{{ item.label }}</p>
-      </button>
+      <a routerLink="{{ item.path }}">
+        <button
+          class="unClickedButton"
+          [class.clickedButton]="item === selectedItem"
+          type="button"
+          (click)="onSelect(item)"
+        >
+          <p>{{ item.label }}</p>
+        </button>
+      </a>
     </li>
   </ul>
 </div>

@@ -3,10 +3,11 @@
 .sideBar {
   height: 100vh;
   width: 300px;
-  position: relative;
-  background-color: #033347;
+  position: fixed;
+  background-color: $colorPrimary;
   display: flex;
   flex-direction: column;
+  border-right: 2px solid $colorBorder;
 }
 
 h1 {

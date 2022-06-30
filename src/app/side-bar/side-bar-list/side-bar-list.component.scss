@@ -11,7 +11,7 @@ li {
 @mixin sideBarButton {
   @include textFormat(18px, $textColorPrimary);
   width: 100%;
-  border: 1px solid #3e5360;
+  border: 1px solid $colorBorder;
   border-left: none;
   border-right: none;
   border-radius: 0%;

@@ -5,12 +5,12 @@ export interface sideBarNavList {
 }
 
 export const SideBarItems: sideBarNavList[] = [
-  { label: 'Corrosion', path: '' },
-  { label: 'Milling Anomaly', path: '' },
-  { label: 'Girth Weld Anomaly', path: '' },
-  { label: 'Dent', path: '' },
-  { label: 'Lamination', path: '' },
-  { label: 'Crack', path: '' },
-  { label: 'Buckle', path: '' },
-  { label: 'Illegal Tap', path: '' },
+  { label: 'Corrosion', path: '/corrosion' },
+  { label: 'Milling Anomaly', path: '/milling' },
+  { label: 'Girth Weld Anomaly', path: '/girthweldanomaly' },
+  { label: 'Dent', path: '/dent' },
+  { label: 'Lamination', path: '/lamination' },
+  { label: 'Crack', path: '/crack' },
+  { label: 'Buckle', path: '/buckle' },
+  { label: 'Illegal Tap', path: '/illegaltap' },
 ];
