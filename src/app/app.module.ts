@@ -13,10 +13,23 @@ import { LaminationComponent } from './view/lamination/lamination.component';
 import { CrackComponent } from './view/crack/crack.component';
 import { BuckleComponent } from './view/buckle/buckle.component';
 import { IllegaltapComponent } from './view/illegaltap/illegaltap.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
-  declarations: [AppComponent, SideBarComponent, SideBarListComponent, CorrosionComponent, MillingComponent, GirthweldanomalyComponent, DentComponent, LaminationComponent, CrackComponent, BuckleComponent, IllegaltapComponent],
-  imports: [BrowserModule, AppRoutingModule],
+  declarations: [
+    AppComponent,
+    SideBarComponent,
+    SideBarListComponent,
+    CorrosionComponent,
+    MillingComponent,
+    GirthweldanomalyComponent,
+    DentComponent,
+    LaminationComponent,
+    CrackComponent,
+    BuckleComponent,
+    IllegaltapComponent,
+  ],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })

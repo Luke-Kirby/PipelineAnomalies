@@ -1,0 +1,81 @@
+{
+  "anomalies": {
+    "test": "example",
+    "corrosion": [
+      {
+        "id": 1,
+        "distance": 1024.347,
+        "depth": 90,
+        "orientation": "06:00",
+        "surfaceLocation": "EXT"
+      },
+      {
+        "id": 2,
+        "distance": 307.285,
+        "depth": 92,
+        "orientation": "07:00",
+        "surfaceLocation": "INT"
+      },
+      {
+        "id": 3,
+        "distance": 2249.346,
+        "depth": 70,
+        "orientation": "08:00",
+        "surfaceLocation": "INT"
+      },
+      {
+        "id": 4,
+        "distance": 34.347,
+        "depth": 36,
+        "orientation": "02:00",
+        "surfaceLocation": "EXT"
+      }
+    ],
+    "milling": [
+      {
+        "id": 14,
+        "distance": 986.2,
+        "depth": 90,
+        "orientation": "06:00",
+        "surfaceLocation": "INT"
+      },
+      {
+        "id": 15,
+        "distance": 12.124,
+        "depth": 80,
+        "orientation": "07:00",
+        "surfaceLocation": "INT"
+      },
+      {
+        "id": 16,
+        "distance": 692.288,
+        "depth": 70,
+        "orientation": "08:00",
+        "surfaceLocation": "EXT"
+      }
+    ],
+    "girthWeld": [
+      {
+        "id": 27,
+        "distance": 546.365,
+        "depth": 90,
+        "orientation": "06:00",
+        "surfaceLocation": "MID"
+      },
+      {
+        "id": 28,
+        "distance": 1244.874,
+        "depth": 80,
+        "orientation": "07:00",
+        "surfaceLocation": "INT"
+      },
+      {
+        "id": 29,
+        "distance": 506.346,
+        "depth": 70,
+        "orientation": "08:00",
+        "surfaceLocation": "EXT"
+      }
+    ]
+  }
+}
