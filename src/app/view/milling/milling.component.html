@@ -2,4 +2,12 @@
   <h1>
     <u><em>Milling Anomalies</em></u>
   </h1>
+  <ul>
+    <li>{{ numberOfAnomalies }} milling anomalies reported.</li>
+    <li>
+      Deepest pipe mill anomaly of {{ deepestAnomaly.depth }} wt at
+      {{ deepestAnomaly.distance }} m.
+    </li>
+  </ul>
+  <app-scatter-graph [anomalyType]="anomaly"></app-scatter-graph>
 </div>

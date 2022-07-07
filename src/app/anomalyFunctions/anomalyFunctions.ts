@@ -1,10 +1,15 @@
-export interface AnomalyType {
+import testData from '../../assets/data/db.json';
+
+//change to anomaly
+export interface Anomaly {
   id: number;
   distance: number;
   depth: number;
   orientation: string;
   surfaceLocation: string;
 }
+
+export type AnomalyType = keyof typeof testData['anomalies'];
 
 //FUNCTION 1: find the deepest anomaly
 
@@ -13,7 +18,7 @@ export interface ReturnedAnomaly {
   depth: number;
 }
 
-export function deepestAnomaly(anomalyArr: AnomalyType[]): ReturnedAnomaly {
+export function deepestAnomaly(anomalyArr: Anomaly[]): ReturnedAnomaly {
   let returnedAnomaly: ReturnedAnomaly = {
     distance: 0,
     depth: 0,
@@ -34,4 +39,28 @@ export function deepestAnomaly(anomalyArr: AnomalyType[]): ReturnedAnomaly {
   return returnedAnomaly;
 }
 
-//END FUNCTION 1: find the deepest anomaly
+//FUNCTION 2: return data as scattergraph array
+
+export function scatterData(anomalyArr: Anomaly[]) {
+  let scatterArr: number[][] = [];
+
+  for (let i = 0; i < anomalyArr.length; i++) {
+    scatterArr.push([anomalyArr[i].distance, anomalyArr[i].depth]);
+  }
+
+  return scatterArr;
+}
+
+//FUNCTION 3: return chart data
+
+export function chartData(anomaly: string): any {
+  if (anomaly === 'corrosion') {
+    return testData.anomalies.corrosion;
+  } else if (anomaly === 'milling') {
+    return testData.anomalies.milling;
+  } else if (anomaly === 'girthWeld') {
+    return testData.anomalies.milling;
+  } else {
+    return '';
+  }
+}

@@ -48,6 +48,11 @@ h2 {
   text-shadow: 0px 0px 4px black;
 }
 
+h3 {
+  @include textFormat(15px, $textColorPrimary);
+  text-shadow: 0px 0px 4px black;
+}
+
 ul {
   @include textFormat(20px, $textColorPrimary);
   text-shadow: 0px 0px 4px black;

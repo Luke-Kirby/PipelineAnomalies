@@ -14,6 +14,8 @@ import { CrackComponent } from './view/crack/crack.component';
 import { BuckleComponent } from './view/buckle/buckle.component';
 import { IllegaltapComponent } from './view/illegaltap/illegaltap.component';
 import { HttpClientModule } from '@angular/common/http';
+import { NgxEchartsModule } from 'ngx-echarts';
+import { ScatterGraphComponent } from './charts/scatter-graph/scatter-graph.component';
 
 @NgModule({
   declarations: [
@@ -28,8 +30,16 @@ import { HttpClientModule } from '@angular/common/http';
     CrackComponent,
     BuckleComponent,
     IllegaltapComponent,
+    ScatterGraphComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    NgxEchartsModule.forRoot({
+      echarts: () => import('echarts'),
+    }),
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

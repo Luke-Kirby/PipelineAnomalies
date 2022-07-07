@@ -1,18 +1,17 @@
 {
   "anomalies": {
-    "test": "example",
     "corrosion": [
       {
         "id": 1,
         "distance": 1024.347,
-        "depth": 90,
+        "depth": 80,
         "orientation": "06:00",
         "surfaceLocation": "EXT"
       },
       {
         "id": 2,
         "distance": 307.285,
-        "depth": 92,
+        "depth": 83,
         "orientation": "07:00",
         "surfaceLocation": "INT"
       },
@@ -29,20 +28,27 @@
         "depth": 36,
         "orientation": "02:00",
         "surfaceLocation": "EXT"
+      },
+      {
+        "id": 5,
+        "distance": 434.347,
+        "depth": 60,
+        "orientation": "02:00",
+        "surfaceLocation": "EXT"
       }
     ],
     "milling": [
       {
         "id": 14,
-        "distance": 986.2,
-        "depth": 90,
+        "distance": 386.2,
+        "depth": 50,
         "orientation": "06:00",
         "surfaceLocation": "INT"
       },
       {
         "id": 15,
         "distance": 12.124,
-        "depth": 80,
+        "depth": 82,
         "orientation": "07:00",
         "surfaceLocation": "INT"
       },
@@ -50,6 +56,27 @@
         "id": 16,
         "distance": 692.288,
         "depth": 70,
+        "orientation": "08:00",
+        "surfaceLocation": "EXT"
+      },
+      {
+        "id": 17,
+        "distance": 586.2,
+        "depth": 35,
+        "orientation": "06:00",
+        "surfaceLocation": "INT"
+      },
+      {
+        "id": 18,
+        "distance": 212.124,
+        "depth": 70,
+        "orientation": "07:00",
+        "surfaceLocation": "INT"
+      },
+      {
+        "id": 19,
+        "distance": 992.288,
+        "depth": 42,
         "orientation": "08:00",
         "surfaceLocation": "EXT"
       }
